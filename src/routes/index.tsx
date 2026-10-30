@@ -132,7 +132,7 @@ function Index() {
             </a>
             <a href="#village" className="font-pixel rounded-lg glass px-7 py-4 text-sm transition hover:glow">Explore</a>
           </div>
-          <p className="mt-8 text-xs text-muted-foreground">Created by Navanit & Jaiyshaan · {GAME_VERSION}</p>
+          <p className="mt-8 text-base text-foreground/90">Created by <span className="font-pixel text-sm text-primary-glow text-glow">Navanit & Jaiyshaan</span> · {GAME_VERSION}</p>
         </div>
         <a href="#stats" className="absolute bottom-8 z-10 animate-bounce text-muted-foreground"><ChevronDown /></a>
       </section>
@@ -285,7 +285,7 @@ function Index() {
 
       <footer className="relative z-10 border-t border-border py-10 text-center">
         <p className="font-pixel text-2xl text-glow">TRAKS</p>
-        <p className="mt-2 text-sm text-muted-foreground">Created by Navanit & Jaiyshaan · Made with Godot, C++ & Python</p>
+        <p className="mt-2 text-base text-foreground/90">Created by <span className="font-pixel text-sm text-primary-glow text-glow">Navanit & Jaiyshaan</span> · Made with Godot, C++ & Python</p>
       </footer>
     </div>
   );
