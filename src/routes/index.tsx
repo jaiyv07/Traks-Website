@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Download, Sprout, Users, Globe, Moon, Save, Cpu, Code2, Gamepad2, ChevronDown, Clock } from "lucide-react";
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/hero-simplified.jpg";
 import { builds, GAME_VERSION } from "@/lib/downloads";
 import { TerrainPreview } from "@/components/traks/TerrainPreview";
 import { KeyboardDemo } from "@/components/traks/KeyboardDemo";
