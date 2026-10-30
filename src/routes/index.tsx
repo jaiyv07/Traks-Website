@@ -119,12 +119,12 @@ function Index() {
       </header>
 
       {/* Hero */}
-      <section className="relative flex min-h-screen items-center justify-center px-5 pt-20">
-        <img src={hero} alt="TRAKS village at dusk" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover opacity-50" />
+      <section className="relative flex min-h-[min(75svh,640px)] items-center justify-center px-5 pb-20 pt-24">
+        <img src={hero} alt="TRAKS village at dusk" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/50 to-background" />
         <div className="relative z-10 text-center">
           <p className="font-pixel text-xs tracking-[0.3em] text-accent">A TINY, COZY SURVIVAL GAME</p>
-          <h1 className="font-pixel mt-6 text-7xl md:text-9xl text-glow animate-float">TRAKS</h1>
+          <h1 className="font-pixel mt-6 text-6xl md:text-8xl text-glow animate-float">TRAKS</h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">Plant. Harvest. Befriend the village.</p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href="#download" className="font-pixel inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-7 py-4 text-sm text-primary-foreground animate-pulse-glow transition hover:scale-105">
