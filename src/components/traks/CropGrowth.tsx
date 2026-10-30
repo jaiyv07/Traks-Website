@@ -9,7 +9,7 @@ const STAGES = [
 
 export function CropGrowth() {
   const [day, setDay] = useState(0);
-  const stage = STAGES[day];
+  const stage = STAGES[day]!;
   return (
     <div className="glass rounded-2xl p-6 text-center glow">
       <p className="font-pixel text-xs text-muted-foreground">DAY {day + 1}</p>
