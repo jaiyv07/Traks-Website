@@ -24,11 +24,11 @@ export const Route = createFileRoute("/")({
 const NAV = [["Village", "#village"], ["World", "#world"], ["Farm", "#farm"], ["Controls", "#controls"], ["Tech", "#tech"], ["FAQ", "#faq"]];
 
 const VILLAGERS = [
-  { name: "John", role: "The Welcomer", text: "Your welcome to town: an intro first, then chats on whatever is on his mind.", emoji: "🧔" },
+  { name: "John", role: "The Welcomer", text: "Your welcome to town: an intro first, then chats on whatever is on his mind.", emoji: "👨" },
   { name: "Kaia", role: "AI Villager", text: "A villager you can really talk to. Replies are AI-written, so no two chats are the same.", emoji: "👩" },
   { name: "Mira", role: "AI Villager", text: "Short, friendly AI replies — with a written line ready if the AI is offline.", emoji: "👧" },
-  { name: "Orin", role: "AI Villager", text: "Another neighbour to talk to. Every conversation is generated fresh by AI.", emoji: "🧑" },
-  { name: "Seller", role: "Merchant", text: "Buys your harvest, and lets you know when you have nothing to sell.", emoji: "🧺" },
+  { name: "Orin", role: "AI Villager", text: "Another neighbour to talk to. Every conversation is generated fresh by AI.", emoji: "👦" },
+  { name: "Seller", role: "Merchant", text: "Buys your harvest, and lets you know when you have nothing to sell.", emoji: "💰" },
 ];
 
 const STEPS = [
