@@ -250,8 +250,9 @@ function Index() {
               <div key={b.platform} className="rounded-2xl border border-border bg-card p-6 transition hover:border-primary">
                 <h3 className="font-pixel text-lg">{b.platform}</h3>
                 <p className="mt-1 text-xs text-muted-foreground">{b.note}</p>
-                {b.file ? (
-                  <a href={`/downloads/${b.file}`} download={b.file}
+                {b.file || b.url ? (
+                  <a href={b.url ?? `/downloads/${b.file}`} download={b.file ?? undefined}
+                    target={b.url ? "_blank" : undefined} rel={b.url ? "noopener noreferrer" : undefined}
                     className="font-pixel mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-primary py-3 text-xs text-primary-foreground animate-pulse-glow">
                     <Download className="h-4 w-4" /> Download {b.size ?? ""}
                   </a>
