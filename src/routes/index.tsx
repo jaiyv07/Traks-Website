@@ -50,7 +50,7 @@ const FAQ = [
   ["Do I need internet?", "Only for AI-written villager chats. Offline, villagers like Mira fall back to written lines."],
   ["Does my farm save?", "Yes. Your farm is saved automatically — hit Continue on the menu to pick up where you left off."],
   ["Is every world different?", "Every new game builds a fresh world from noise: new coastlines, forests and land."],
-  ["What platforms are supported?", "Builds for Windows, macOS and Linux are planned. Check the download section for what's live."],
+  ["What platforms are supported?", "Windows is out now — grab it from the download section. macOS and Linux builds are coming soon."],
 ];
 
 function Particles() {
