@@ -50,7 +50,7 @@ const FAQ = [
   ["Do I need internet?", "Only for AI-written villager chats. Offline, villagers like Mira fall back to written lines."],
   ["Does my farm save?", "Yes. Your farm is saved automatically — hit Continue on the menu to pick up where you left off."],
   ["Is every world different?", "Every new game builds a fresh world from noise: new coastlines, forests and land."],
-  ["What platforms are supported?", "Windows is out now — grab it from the download section. Android, iOS, macOS and Linux builds are coming soon."],
+  ["What platforms are supported?", "Windows is out now — grab it from the download section. Android, iOS, macOS, Linux and Ubuntu Touch builds are coming soon."],
 ];
 
 function Particles() {
@@ -245,7 +245,7 @@ function Index() {
         <div className="glass relative overflow-hidden rounded-3xl p-8 text-center glow-lg md:p-14">
           <div className="absolute -top-32 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-primary opacity-30 blur-3xl" />
           <SectionTitle kicker={GAME_VERSION.toUpperCase()} title="Play TRAKS" />
-          <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="relative grid gap-5 sm:grid-cols-2">
             {builds.map((b) => (
               <div key={b.platform} className="rounded-2xl border border-border bg-card p-6 transition hover:border-primary">
                 <h3 className="font-pixel text-lg">{b.platform}</h3>
