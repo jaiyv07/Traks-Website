@@ -20,4 +20,5 @@ export const builds: Build[] = [
   },
   { platform: "macOS", note: "macOS 12+ · Intel & Apple Silicon", file: null },
   { platform: "Linux", note: "x86_64 · AppImage", file: null },
+  { platform: "Android", note: "Android 8+ · APK", file: null },
 ];
