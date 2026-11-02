@@ -9,6 +9,8 @@ export type Build = {
   size?: string;
 };
 
+export const GAME_VERSION = "v1";
+
 // Pairs (per user request): Windows+Android, macOS+iOS, Linux+Ubuntu Touch.
 export const builds: Build[] = [
   {
