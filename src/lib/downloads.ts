@@ -11,6 +11,7 @@ export type Build = {
 
 export const GAME_VERSION = "v1";
 
+// Pairs (per user request): Windows+Android, macOS+iOS, Linux+Ubuntu Touch.
 export const builds: Build[] = [
   {
     platform: "Windows",
@@ -18,8 +19,9 @@ export const builds: Build[] = [
     file: null,
     url: "https://drive.google.com/drive/folders/1Bj4JJJw4ERNXyAJnceuCqbpYYAq8nXXs?usp=drive_link",
   },
-  { platform: "macOS", note: "macOS 12+ · Intel & Apple Silicon", file: null },
-  { platform: "Linux", note: "x86_64 · AppImage", file: null },
   { platform: "Android", note: "Android 8+ · APK", file: null },
+  { platform: "macOS", note: "macOS 12+ · Intel & Apple Silicon", file: null },
   { platform: "iOS", note: "iPhone & iPad · App Store", file: null },
+  { platform: "Linux", note: "x86_64 · AppImage", file: null },
+  { platform: "Ubuntu Touch", note: "Ubuntu Touch · arm64", file: null },
 ];
