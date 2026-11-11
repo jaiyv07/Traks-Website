@@ -12,16 +12,28 @@ export type Build = {
 export const GAME_VERSION = "v1";
 
 // Pairs (per user request): Windows+Android, macOS+iOS, Linux+Ubuntu Touch.
+// Released so far: Windows, Android, Linux. macOS and iOS folders are still empty.
 export const builds: Build[] = [
   {
     platform: "Windows",
-    note: "Windows 10 / 11 · 64-bit",
+    note: "Windows 10 / 11 · x64, arm64 or x32",
     file: null,
-    url: "https://drive.google.com/drive/folders/1Bj4JJJw4ERNXyAJnceuCqbpYYAq8nXXs?usp=drive_link",
+    url: "https://drive.google.com/drive/folders/1IshkwMBT9NiD8ZXpco9pSQXIPPcYIxwC?usp=sharing",
   },
-  { platform: "Android", note: "Android 8+ · APK", file: null },
+  {
+    platform: "Android",
+    note: "Android 8+ · Traks.apk",
+    file: null,
+    url: "https://drive.google.com/drive/folders/1eoYPwcoeUEBNYbkJOSpyzCzEr3JMCGgU?usp=sharing",
+    size: "168 MB",
+  },
   { platform: "macOS", note: "macOS 12+ · Intel & Apple Silicon", file: null },
   { platform: "iOS", note: "iPhone & iPad · App Store", file: null },
-  { platform: "Linux", note: "x86_64 · AppImage", file: null },
+  {
+    platform: "Linux",
+    note: "x64, arm64, arm32 or x32",
+    file: null,
+    url: "https://drive.google.com/drive/folders/1Eivk3yng-ddJXGHdFblEArf7daq3kUSj?usp=sharing",
+  },
   { platform: "Ubuntu Touch", note: "Ubuntu Touch · arm64", file: null },
 ];
