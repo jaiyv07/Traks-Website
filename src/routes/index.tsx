@@ -264,7 +264,7 @@ function Index() {
               </div>
             ))}
           </div>
-          <p className="relative mt-8 text-sm text-muted-foreground">Unzip, run TRAKS, and hit <span className="text-foreground">New Game</span>. Have fun!</p>
+          <p className="relative mt-8 text-sm text-muted-foreground">Windows &amp; Linux: download the whole folder, keep its files together, then run <span className="text-foreground">traks</span>. Android: install <span className="text-foreground">Traks.apk</span>. Then hit <span className="text-foreground">New Game</span>. Have fun!</p>
         </div>
       </section>
 
