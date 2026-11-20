@@ -6,6 +6,7 @@ import { builds, GAME_VERSION } from "@/lib/downloads";
 import { TerrainPreview } from "@/components/traks/TerrainPreview";
 import { KeyboardDemo } from "@/components/traks/KeyboardDemo";
 import { CropGrowth } from "@/components/traks/CropGrowth";
+import { TraksLogo } from "@/components/traks/TraksLogo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -110,7 +111,10 @@ function Index() {
 
       <header className="fixed inset-x-0 top-0 z-50 glass border-x-0 border-t-0">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-          <a href="#" className="font-pixel text-xl text-glow">TRAKS</a>
+          <a href="#" className="font-pixel text-xl text-glow flex items-center gap-2.5">
+            <TraksLogo className="h-7 w-7" />
+            <span>TRAKS</span>
+          </a>
           <div className="hidden gap-6 md:flex">
             {NAV.map(([l, h]) => <a key={h} href={h} className="text-sm text-muted-foreground transition hover:text-foreground">{l}</a>)}
           </div>
@@ -132,7 +136,7 @@ function Index() {
             </a>
             <a href="#village" className="font-pixel rounded-lg glass px-7 py-4 text-sm transition hover:glow">Explore</a>
           </div>
-          <p className="mt-8 text-base text-foreground/90">Created by <span className="font-pixel text-sm text-primary-glow text-glow">Navanit & Jaiyshaan</span> · {GAME_VERSION}</p>
+          <p className="mt-8 text-base text-foreground/90">Created by <span className="font-pixel text-sm text-primary-glow text-glow">Jaiyshaan and Navanit</span> · {GAME_VERSION}</p>
         </div>
         <a href="#stats" className="absolute bottom-8 z-10 animate-bounce text-muted-foreground"><ChevronDown /></a>
       </section>
@@ -285,8 +289,11 @@ function Index() {
       </section>
 
       <footer className="relative z-10 border-t border-border py-10 text-center">
-        <p className="font-pixel text-2xl text-glow">TRAKS</p>
-        <p className="mt-2 text-base text-foreground/90">Created by <span className="font-pixel text-sm text-primary-glow text-glow">Navanit & Jaiyshaan</span> · Made with Godot, C++ & Python</p>
+        <div className="flex items-center justify-center gap-2.5">
+          <TraksLogo className="h-8 w-8" />
+          <p className="font-pixel text-2xl text-glow">TRAKS</p>
+        </div>
+        <p className="mt-2 text-base text-foreground/90">Created by <span className="font-pixel text-sm text-primary-glow text-glow">Jaiyshaan and Navanit</span> · Made with Godot, C++ & Python</p>
       </footer>
     </div>
   );

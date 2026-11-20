@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#2e1065" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0f0720" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="tileBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1138" />
+      <stop offset="50%" stop-color="#130924" />
+      <stop offset="100%" stop-color="#090314" />
+    </linearGradient>
+    <linearGradient id="purpleNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0fe" />
+      <stop offset="30%" stop-color="#d946ef" />
+      <stop offset="70%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="sproutNeon" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#6ee7b7" />
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind Icon -->
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="url(#bgGlow)" />
+
+  <!-- Base Dark Violet Rounded Shield/Tile -->
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#tileBg)" stroke="#a855f7" stroke-width="2" stroke-opacity="0.9" />
+
+  <!-- Inner Subtle Accent Border -->
+  <rect x="6" y="6" width="52" height="52" rx="11" fill="none" stroke="#c084fc" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Glowing Emblem -->
+  <g filter="url(#softGlow)">
+    <!-- 'T' Top Bar -->
+    <rect x="14" y="15" width="36" height="8" rx="2" fill="url(#purpleNeon)" />
+    <!-- 'T' Highlight -->
+    <rect x="16" y="16.5" width="32" height="2" rx="1" fill="#ffffff" opacity="0.65" />
+    
+    <!-- 'T' Stem -->
+    <rect x="28" y="23" width="8" height="25" rx="2" fill="url(#purpleNeon)" />
+    <rect x="29" y="24" width="2" height="23" fill="#ffffff" opacity="0.35" />
+    
+    <!-- Farming Sprout: Right Leaf -->
+    <path d="M36 29 C44 26 48 31 46 36 C41 36 37 32 36 29 Z" fill="url(#sproutNeon)" />
+    <!-- Farming Sprout: Left Leaf -->
+    <path d="M28 35 C21 33 18 38 20 42 C24 42 27 38 28 35 Z" fill="url(#sproutNeon)" opacity="0.9" />
+  </g>
+
+  <!-- Pixel Sparks / Stars -->
+  <rect x="12" y="39" width="2" height="2" fill="#e879f9" opacity="0.8" />
+  <rect x="50" y="22" width="2" height="2" fill="#f5d0fe" opacity="0.9" />
+  <rect x="47" y="45" width="2.5" height="2.5" fill="#34d399" opacity="0.8" />
+</svg>
